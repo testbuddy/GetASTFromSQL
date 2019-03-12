@@ -24,4 +24,4 @@ input.sql - here the path to input file
 
 output.json - here the path to the output file
 
--- <- very important **dont skip**!
+'--' <- very important **dont skip**!

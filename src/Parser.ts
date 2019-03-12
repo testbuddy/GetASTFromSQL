@@ -402,6 +402,7 @@ export class Parser {
     };
     const selectExpressions: ASTNode[] = this.parseListOfElements();
     if (selectExpressions.length > 0) {
+      output = Object.assign(output, { columns: selectExpressions });
       if (this.isKeyword('FROM')) {
         output = Object.assign(output, { from: this.parseFrom() });
       }
